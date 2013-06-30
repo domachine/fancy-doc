@@ -1,7 +1,7 @@
 {
   "name": "fancy-doc",
   "version": "0.0.1",
-  "description": "Document your projects like on github",
+  "description": "Document component based projects with markdown.",
   "keywords": [],
   "author": "Dominik Burgdörfer <dominik.burgdoerfer@mikanda.de>",
   "repository": {
