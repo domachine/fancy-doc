@@ -1,0 +1,9 @@
+{
+  "paths": [
+    "lib",
+    "lib/models"
+  ],
+  "local": [
+    "project-view"
+  ]
+}

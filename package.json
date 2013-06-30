@@ -4,8 +4,17 @@
   "description": "Document your projects like on github",
   "keywords": [],
   "author": "Dominik Burgdörfer <dominik.burgdoerfer@mikanda.de>",
-  "repository": { "type": "git", "url": "git://github.com/domachine/fancy-doc.git" },
-  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/domachine/fancy-doc.git"
+  },
+  "dependencies": {
+    "commander": "~1.2.0",
+    "marked": "~0.2.9",
+    "express": "~3.3.1",
+    "jade": "~0.32.0",
+    "async": "~0.2.9"
+  },
   "devDependencies": {
     "mocha": "*",
     "should": "*"
