@@ -1,7 +1,7 @@
 
 # fancy-doc
 
-  Document your projects like on github
+  Document component based projects using markdown.
 
 ## License 
 
