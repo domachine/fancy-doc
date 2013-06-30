@@ -1,0 +1,14 @@
+{
+  "name": "fancy-doc",
+  "version": "0.0.1",
+  "description": "Document your projects like on github",
+  "keywords": [],
+  "author": "Dominik Burgdörfer <dominik.burgdoerfer@mikanda.de>",
+  "repository": { "type": "git", "url": "git://github.com/domachine/fancy-doc.git" },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "main": "index"
+}
