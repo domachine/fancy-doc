@@ -1,10 +1,10 @@
 
 # fancy-doc
 
-  Document component based projects using markdown.  It uses a given root
-  directory and serves the documentation of all contained projects.  It assumes
-  that the project has a `component.json` file within its top-level directory
-  which is used to determine the submodules.  See
+  Document component based projects using markdown.  `fancy-doc` uses a given
+  root directory and serves the documentation of all contained projects.  It
+  assumes that the project has a `component.json` file within its top-level
+  directory which is used to determine the submodules.  See
   [project-view](lib/project-view) for the ReST-style api.
 
 ## Usage
