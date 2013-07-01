@@ -19,7 +19,9 @@ program
 
 // parse command line
 
-program.parse(process.argv);
+var args = process.argv.slice();
+args[1] = 'fancy-doc';
+program.parse(args);
 
 // create configuration
 

@@ -9,12 +9,34 @@
 
 ## Usage
 
-    $ git clone git://github.com/domachine/fancy-doc.git
-    $ cd fancy-doc
-    $ make run
+  `fancy-doc` operates on a directory which contains multiple *component-based*
+  projects.  A project with components has the following structure:
 
-  open `http://localhost:3000/projects/fancy-doc/` in your browser to see the
-  documentation of this project.
+    project-name/
+      component.json
+      ...
+
+  The `component.json` should at least include the name of the project.
+  `fancy-doc` then reads the `paths` key from the `component.json` (see
+  [component.json (spec)](https://github.com/component/component/wiki/Spec)) to
+  get where the modules of the project reside.  Each of these modules can
+  include a `Readme.md` file which is linked by `fancy-doc`.
+
+  So now you should have a structure like the following:
+
+    root/
+      project-name/
+        component.json
+        ...
+
+  Now start `fancy-doc`
+
+    $ bin/fancy-doc --root path/to/root
+
+  and point your favorite internet browser to
+  `http://localhost:3000/projects/project-name/` to browse your documentation.
+
+  Happy hacking!
 
 ## License 
 
