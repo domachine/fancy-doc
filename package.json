@@ -4,6 +4,9 @@
   "description": "Document component based projects with markdown.",
   "keywords": [],
   "author": "Dominik Burgdörfer <dominik.burgdoerfer@mikanda.de>",
+  "bin": {
+    "fancy-doc": "bin/fancy-doc"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/domachine/fancy-doc.git"
