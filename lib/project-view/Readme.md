@@ -1,5 +1,5 @@
 
-# project
+# project-view
 
   Show the documentation for a project.
 
