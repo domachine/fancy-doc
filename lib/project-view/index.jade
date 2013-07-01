@@ -6,13 +6,18 @@ html
   body
     #modules
       .project
-        a(href='/projects/#{project}')= project
+        a(href='/projects/#{project.name}')
+          = project.name
       each ms, path in modules
         span= path
         ul
           each module in ms
             li
-              a(href='/projects/#{project}/docs/#{module.path}/#{module.name}')
+              a(href='/projects/#{project.name}/docs/#{module.path}/#{module.name}')
                 = module.name
     #readme
-      div!= readme
+      div
+        if readme == null
+          h1 No readme found!
+        else
+          != readme
