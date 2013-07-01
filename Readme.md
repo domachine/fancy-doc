@@ -9,6 +9,8 @@
 
 ## Usage
 
+    $ git clone git://github.com/domachine/fancy-doc.git
+    $ cd fancy-doc
     $ make run
 
   open `http://localhost:3000/projects/fancy-doc/` in your browser to see the
