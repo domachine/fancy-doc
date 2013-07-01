@@ -6,14 +6,14 @@ html
   body
     #modules
       .project
-        a(href='/projects/#{project.name}')
+        a(href='/projects/#{project.basename}')
           = project.name
       each ms, path in modules
         span= path
         ul
           each module in ms
             li
-              a(href='/projects/#{project.name}/docs/#{module.path}/#{module.name}')
+              a(href='/projects/#{project.basename}/docs/#{module.path}/#{module.name}')
                 = module.name
     #readme
       div
