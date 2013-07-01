@@ -13,7 +13,9 @@
     "marked": "~0.2.9",
     "express": "~3.3.1",
     "jade": "~0.32.0",
-    "async": "~0.2.9"
+    "async": "~0.2.9",
+    "component-builder": "~0.8.3",
+    "group-by": "0.0.1"
   },
   "devDependencies": {
     "mocha": "*",
