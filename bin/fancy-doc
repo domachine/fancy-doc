@@ -4,32 +4,25 @@
  * Module dependencies.
  */
 
-var program = require('commander')
-  , nconf = require('nconf');
+var cp = require('child_process')
+  , path = require('path')
+  
+  // symbol imports
+  
+  , spawn = cp.spawn
+  , join = path.join;
 
-// usage
+// spawn cli
 
-program
-  .version(require('../package').version)
-  .option('-p, --port <port>', 'the port to listen to', 3000)
-  .option(
-    '-r, --root <project-root>',
-    'path to the directory where the projects reside',
-    '..'
-  );
-
-// parse command line
-
-program.parse(process.argv);
-
-// create configuration
-
-nconf.set('port', program.port);
-nconf.set('projects', program.root);
-
-// instantiate application
-
-var app = require('..');
-app.listen(program.port, function(){
-  console.log('Express server listening on port ' + program.port);
+var env = process.env;
+var args = process.argv.slice(2);
+env.NODE_PATH = join(__dirname, '../lib');
+args.unshift(join(__dirname, '../cli.js'));
+var child = spawn(
+  process.argv[0],
+  args,
+  { env: env, stdio: 'inherit' }
+);
+child.on('exit', function(){
+  process.exit();
 });
