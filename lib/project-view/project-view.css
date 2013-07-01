@@ -8,9 +8,11 @@
   border: dashed 1px grey;
   padding: 5px;
   float: left;
+  width: 200px;
 }
 
 #readme {
   float: left;
   margin-left: 10px;
+  width: 800px;
 }
