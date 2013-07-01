@@ -3,16 +3,12 @@
 
   Show the documentation for a project.
 
-## Installation
-
-  Install with [component(1)](http://component.io):
-
-    $ component install fancy-doc/project
-
 ## API
 
+### GET `/projects/:name`
 
+Render the toplevel documentation of the project `name`.
 
-## License
+### GET `/projects/:name/docs/:path`
 
-  MIT
+Render the documentation at `path` within the project `name`.
