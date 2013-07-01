@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "project-view",
   "repo": "fancy-doc/project",
   "description": "Show the documentation for a project.",
   "dependencies": {},

@@ -1,0 +1,16 @@
+
+.project {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#modules {
+  border: dashed 1px grey;
+  padding: 5px;
+  float: left;
+}
+
+#readme {
+  float: left;
+  margin-left: 10px;
+}

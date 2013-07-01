@@ -1,3 +1,18 @@
-extends ../../views/project-layout
-block content
-  div!= readme
+!!!5
+html
+  head
+    title= project
+    link(rel='stylesheet', href='/app.css')
+  body
+    #modules
+      .project
+        a(href='/projects/#{project}')= project
+      each ms, path in modules
+        span= path
+        ul
+          each module in ms
+            li
+              a(href='/projects/#{project}/#{module.path}/#{module.name}')
+                = module.name
+    #readme
+      div!= readme
