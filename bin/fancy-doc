@@ -12,7 +12,11 @@ var program = require('commander')
 program
   .version(require('../package').version)
   .option('-p, --port <port>', 'the port to listen to', 3000)
-  .option('-r, --root <project-root>', 'path to the project root', '.');
+  .option(
+    '-r, --root <project-root>',
+    'path to the directory where the projects reside',
+    '..'
+  );
 
 // parse command line
 
