@@ -12,7 +12,7 @@ html
         ul
           each module in ms
             li
-              a(href='/projects/#{project}/#{module.path}/#{module.name}')
+              a(href='/projects/#{project}/docs/#{module.path}/#{module.name}')
                 = module.name
     #readme
       div!= readme
