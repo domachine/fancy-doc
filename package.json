@@ -18,7 +18,8 @@
     "jade": "~0.32.0",
     "async": "~0.2.9",
     "component-builder": "~0.8.3",
-    "group-by": "0.0.1"
+    "group-by": "0.0.1",
+    "batch": "~0.4.0"
   },
   "devDependencies": {
     "mocha": "~1.12.0",
