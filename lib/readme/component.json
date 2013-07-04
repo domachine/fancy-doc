@@ -1,0 +1,15 @@
+{
+  "name": "readme",
+  "dependencies": {
+    "component/marked": "*",
+    "component/domify": "*"
+  },
+  "development": {},
+  "main": "readme.js",
+  "scripts": [
+    "readme.js"
+  ],
+  "styles": [
+    "readme.css"
+  ]
+}

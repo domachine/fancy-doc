@@ -1,0 +1,19 @@
+{
+  "name": "index",
+  "dependencies": {
+    "component/each": "*",
+    "component/domify": "*",
+    "component/query": "*",
+    "component/reactive": "*"
+  },
+  "development": {},
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "path-view.js",
+    "template.js"
+  ],
+  "styles": [
+    "index.css"
+  ]
+}

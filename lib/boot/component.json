@@ -1,0 +1,21 @@
+{
+  "name": "boot",
+  "dependencies": {
+    "visionmedia/superagent": "*",
+    "domachine/hash-router": "*",
+    "component/classes": "*",
+    "component/query": "*"
+  },
+  "development": {},
+  "local": [
+    "index",
+    "readme"
+  ],
+  "main": "boot.js",
+  "scripts": [
+    "boot.js"
+  ],
+  "styles": [
+    "boot.css"
+  ]
+}

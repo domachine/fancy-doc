@@ -1,6 +1,14 @@
 
-public: component.json
-	@component build -o ./public -n app
+COMPONENTS = $(shell find lib -name 'component.json')
+
+public: components
+	@component build --dev -o ./public -n app
+	@touch public
+
+components: component.json $(COMPONENTS)
+	@component install --dev
+	@test -d components || mkdir components
+	@touch components
 
 run: public
 	@NODE_PATH=lib node bin/fancy-doc

@@ -14,7 +14,7 @@ program
   .option(
     '-r, --root <project-root>',
     'path to the directory where the projects reside',
-    '..'
+    '.'
   );
 
 // parse command line
@@ -26,7 +26,7 @@ program.parse(args);
 // create configuration
 
 nconf.set('port', program.port);
-nconf.set('projects', program.root);
+nconf.set('project', program.root);
 
 // instantiate application
 
