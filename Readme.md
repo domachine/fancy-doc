@@ -1,44 +1,43 @@
 
 # fancy-doc
 
-  Document component based projects using markdown.  `fancy-doc` uses a given
-  root directory and serves the documentation of all contained projects.  It
-  assumes that the project has a `component.json` file within its top-level
-  directory which is used to determine the submodules.  See
-  [project-view](lib/project-view) for the ReST-style api.
+  Document component based projects using markdown.  It assumes that a
+  project has a `component.json` file within its top-level directory
+  which is used to determine the submodules.
 
 ## Usage
 
-  `fancy-doc` operates on a directory which contains multiple *component-based*
-  projects.  A project with components has the following structure:
+  `fancy-doc` operates on a directory which contains multiple
+  *component-based* projects.  A project with components has the
+  following structure:
 
     project-name/
       component.json
       ...
 
-  The `component.json` should at least include the name of the project.
-  `fancy-doc` then reads the `paths` key from the `component.json` (see
-  [component.json (spec)](https://github.com/component/component/wiki/Spec)) to
-  get where the modules of the project reside.  Each of these modules can
+  The `component.json` should at least include the name of the
+  project.  `fancy-doc` then reads the `paths` key from the
+  `component.json` (see [component.json
+  (spec)](https://github.com/component/component/wiki/Spec)) to get
+  where the modules of the project reside.  Each of these modules can
   include a `Readme.md` file which is linked by `fancy-doc`.
 
   So now you should have a structure like the following:
 
-    root/
-      project-name/
-        component.json
-        ...
+    project-name/
+      component.json
+      ...
 
   Now start `fancy-doc`
 
-    $ bin/fancy-doc --root path/to/root
+    $ bin/fancy-doc --root path/to/project-name
 
   and point your favorite internet browser to
-  `http://localhost:3000/projects/project-name/` to browse your documentation.
+  `http://localhost:3000/` to browse your documentation.
 
   Happy hacking!
 
-## License 
+## License
 
 (The MIT License)
 
