@@ -1,7 +1,9 @@
 
 COMPONENTS = $(shell find lib -name 'component.json')
+RESOURCES = $(shell find lib -name '*.js' -or -name '*.css') \
+	$(shell find -maxdepth 1 -name '*.js')
 
-public: components
+public: components $(RESOURCES)
 	@component build --dev -o ./public -n app
 	@touch public
 
